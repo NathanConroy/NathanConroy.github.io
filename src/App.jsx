@@ -4,18 +4,29 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Body />
     </div>
   );
 }
 
 function Header() {
     return (
-      <header className="App-header">
+      <header className="site_header">
         <p>
-            Welcome to Nathan Conroy's blog! More content to come.
+            Nathan Conroy's Blog.
         </p>
       </header>
     );
+}
+
+function Body() {
+  return (
+    <body>
+      <p>
+           More content to come.
+      </p>
+    </body>
+  );
 }
 
 export default App;
