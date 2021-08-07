@@ -1,4 +1,5 @@
 import './App.css';
+import Post from './Post';
 
 function App() {
   return (
@@ -10,21 +11,21 @@ function App() {
 }
 
 function Header() {
-    return (
-      <header className="site_header">
-        <p>
-            Nathan Conroy's Blog.
-        </p>
-      </header>
-    );
+  return (
+    <header className="site_header">
+      <h1>
+        Nathan Conroy's Blog
+      </h1>
+    </header>
+  );
 }
 
 function Body() {
   return (
     <body>
-      <p>
-           More content to come.
-      </p>
+      <Post />
+      <Post />
+      <Post />
     </body>
   );
 }

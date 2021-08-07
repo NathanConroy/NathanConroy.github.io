@@ -1,11 +1,18 @@
 p {
-  text-align: center;
   color: white;
+}
+
+.post {
+  color: white;
+  text-align: left;
+  padding-left: 100px;   
+  border-top: 1px solid white;
 }
 
 .App {
   min-height: 100vh;
   background-color: #282c34;
+  text-align: center;
 }
 
 .site_header {
