@@ -1,5 +1,5 @@
 import './App.css';
-import Post from './Post';
+import Posts from './Posts';
 
 function App() {
   return (
@@ -23,9 +23,7 @@ function Header() {
 function Body() {
   return (
     <body>
-      <Post />
-      <Post />
-      <Post />
+      <Posts />
     </body>
   );
 }
