@@ -13,6 +13,7 @@ p {
   min-height: 100vh;
   background-color: #282c34;
   text-align: center;
+  color: white;
 }
 
 .site_header {
@@ -22,4 +23,15 @@ p {
   font-size: calc(10px + 2vmin);
   color: white;
   border-bottom: white; 
+}
+
+ul.menu li {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 10px;
+  display: inline;
+}
+
+h1 {
+ font-size: 2em;
 }
