@@ -28,7 +28,7 @@ function Title() {
 
 function Menu() {
   return (
-    <ul class="menu">
+    <ul className="menu">
       <li>Home</li>
       <li>About Me</li>
     </ul>
@@ -37,10 +37,10 @@ function Menu() {
 
 function Body() {
   return (
-    <body>
+    <>
       <Menu />
       <Posts />
-    </body>
+    </>
   );
 }
 
