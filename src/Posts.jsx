@@ -28,12 +28,10 @@ function usePosts() {
 
 
 function Posts() {
-  usePosts();
+  const posts = usePosts();
   return (
     <>
-      <Post />
-      <Post />
-      <Post />
+      { posts.map((post) => <Post />) }
     </>
   );
 }
