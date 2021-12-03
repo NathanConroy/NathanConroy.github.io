@@ -28,7 +28,7 @@ function Posts() {
   const posts = usePosts();
   return (
     <>
-      { posts.map((post) => <Post post={post} />) }
+      { posts.map((post) => <Post key={post.id.toString()} post={post} />) }
     </>
   );
 }
