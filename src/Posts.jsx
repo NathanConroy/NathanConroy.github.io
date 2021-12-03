@@ -1,17 +1,14 @@
 import { Fragment, useState, useEffect } from 'react';
 import Post from './Post';
-
-import axios from 'axios';
-
-const POSTS_URL = 'https://nathanconroydev.pythonanywhere.com/posts';
+import { retrievePosts } from './be_calls';
 
 /*
  * Fetch posts from the backend.
  */
 function fetchPosts(setPosts) {
-  return axios.get(POSTS_URL)
+  return retrievePosts()
     .then((resp) => resp.data)
-    .then((data) => { console.dir(data); setPosts(data); })
+    .then((data) => { setPosts(data); })
     .catch(); // TODO: handle exception
 }
 

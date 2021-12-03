@@ -1,6 +1,8 @@
-import POSTS_URL from './consts';
+import axios from 'axios';
+
+import { POSTS_URL } from './const';
 
 
-function retrievePosts() {
-    return axios(POSTS_URL);
+export async function retrievePosts() {
+    return axios.get(POSTS_URL);
 }
