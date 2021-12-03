@@ -31,7 +31,7 @@ function Posts() {
   const posts = usePosts();
   return (
     <>
-      { posts.map((post) => <Post />) }
+      { posts.map((post) => <Post post={post} />) }
     </>
   );
 }

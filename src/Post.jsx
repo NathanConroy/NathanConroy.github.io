@@ -1,5 +1,5 @@
 
-function Post() {
+function Post({ post }) {
   return (
     <div className="post">
       <PostHdr />
