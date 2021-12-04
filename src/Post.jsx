@@ -2,18 +2,24 @@
 function Post({ post }) {
   return (
     <div className="post">
-      <PostHdr />
-      <PostTimeStamp />
+      <PostHdr title={post.title} />
+      <PostTimeStamp date={post.date} />
+      <PostContent content={post.content} />
     </div>
   );
 }
 
-function PostHdr() {
-    return <h2>I am a post!</h2>
+function PostHdr({ title }) {
+    return <h2>{title}</h2>
 }
 
-function PostTimeStamp() {
-    return <h3>August 7th, 2021</h3>;
+function PostTimeStamp({ date }) {
+    return <h3>{date}</h3>;
+}
+
+
+function PostContent({ content }) {
+    return <p>{content}</p>;
 }
 
 export default Post;

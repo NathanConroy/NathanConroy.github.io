@@ -6,7 +6,7 @@ import PostObj from './PostObj';
 
 function prepRespPosts(posts) {
   return posts.map(
-    (post) => new PostObj(post.id, post.author, post.title, post.content, post.date)
+    (post) => new PostObj(post.id, post.title, post.author, post.content, post.date)
   );
 }
 
