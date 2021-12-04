@@ -7,6 +7,7 @@ import App from './App';
 
 const OK = 200;
 
+// TODO: Create function to generate each test post.
 const TEST_POSTS = [
   {
     id: 1,
