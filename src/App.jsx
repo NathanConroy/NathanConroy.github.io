@@ -1,5 +1,6 @@
 import './App.css';
 import Posts from './Posts';
+import AboutMe from './AboutMe';
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,6 +9,7 @@ import {
 } from "react-router-dom";
 
 const NULL_ROUTE = "/";
+const ABOUT_ROUTE = "/about";
 
 function App() {
   return (
@@ -41,7 +43,7 @@ function Menu() {
         <Link to={NULL_ROUTE}>Home</Link>
       </li>
       <li>
-        <Link to={NULL_ROUTE}>About Me</Link>
+        <Link to={ABOUT_ROUTE}>About</Link>
       </li>
     </ul>
   );
@@ -51,6 +53,7 @@ function SiteRoutes() {
   return (
     <Routes>
       <Route path={NULL_ROUTE} element={<Posts />}/>
+      <Route path={ABOUT_ROUTE} element={<AboutMe />}/>
     </Routes>
   );
 }
