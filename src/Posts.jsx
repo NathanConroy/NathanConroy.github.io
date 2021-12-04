@@ -1,12 +1,12 @@
 import { Fragment, useState, useEffect } from 'react';
 import Post from './Post';
 import { retrievePosts } from './be_calls';
-import PostData from './PostData';
+import PostObj from './PostObj';
 
 
 function prepRespPosts(posts) {
   return posts.map(
-    (post) => new PostData(post.id, post.author, post.title, post.content, post.date)
+    (post) => new PostObj(post.id, post.author, post.title, post.content, post.date)
   );
 }
 
