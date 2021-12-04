@@ -3,7 +3,7 @@ function Post({ post }) {
   return (
     <div className="post">
       <PostHdr title={post.title} />
-      <PostTimeStamp date={post.date} />
+      <PostTimeStamp date={post.dateStr} />
       <PostContent content={post.content} />
     </div>
   );
