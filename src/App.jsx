@@ -1,5 +1,13 @@
 import './App.css';
 import Posts from './Posts';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
+const NULL_ROUTE = "/";
 
 function App() {
   return (
@@ -29,18 +37,30 @@ function Title() {
 function Menu() {
   return (
     <ul className="menu">
-      <li>Home</li>
-      <li>About Me</li>
+      <li>
+        <Link to={NULL_ROUTE}>Home</Link>
+      </li>
+      <li>
+        <Link to={NULL_ROUTE}>About Me</Link>
+      </li>
     </ul>
+  );
+}
+
+function SiteRoutes() {
+  return (
+    <Routes>
+      <Route path={NULL_ROUTE} element={<Posts />}/>
+    </Routes>
   );
 }
 
 function Body() {
   return (
-    <>
+    <Router>
       <Menu />
-      <Posts />
-    </>
+      <SiteRoutes />
+    </Router>
   );
 }
 
