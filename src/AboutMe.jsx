@@ -1,7 +1,11 @@
 
 
 function AboutMe() {
-  return <p>Page under development.</p>;
+  return (
+    <div className="about">
+      <p>Hello! Welcome to my blog!</p>
+    </div>
+  );
 }
 
 export default AboutMe;

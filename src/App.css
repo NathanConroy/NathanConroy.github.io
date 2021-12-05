@@ -33,7 +33,11 @@ a {
   border-bottom: white; 
 }
 
-ul.menu li {
+.menu {
+  padding-inline-start: 0px;
+}
+
+ul li {
   font-weight: bold;
   font-size: 1.5em;
   padding: 10px;
@@ -42,4 +46,8 @@ ul.menu li {
 
 h1 {
  font-size: 2em;
+}
+
+.about p {
+  font-size: 1.2em;
 }
