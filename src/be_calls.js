@@ -7,7 +7,7 @@ import { POSTS_URL } from './const';
  * Sorts posts by date.
  */
 function sortPosts(posts) {
-    return posts.sort((a, b) => a.date - b.date);
+    return posts.sort((a, b) => b.date - a.date);
 }
 
 
