@@ -25,10 +25,25 @@ function prepRespPosts(resp) {
 
 
 /*
+ * Return URL for requesting blog posts.
+ */
+function getPostsURL() {
+  return POSTS_URL;
+}
+
+/*
+ * Return URL for requesting the "about" page.
+ */
+function getAboutURL() {
+  return ABOUT_URL;
+}
+
+
+/*
  * Retrieves all blog posts.
  */
 export async function retrievePosts() {
-  return axios.get(POSTS_URL)
+  return axios.get(getPostsURL())
     .then((resp) => prepRespPosts(resp));
 }
 
@@ -36,7 +51,7 @@ export async function retrievePosts() {
  * Retrieves About Page content.
  */
 export async function retrieveAbout() {
-  return axios.get(ABOUT_URL)
+  return axios.get(getAboutURL());
 }
 
 
