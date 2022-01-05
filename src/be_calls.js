@@ -3,6 +3,8 @@ import PostObj from './PostObj';
 
 const BASE_URL = 'https://nathanconroydev.pythonanywhere.com';
 export const POSTS_URL = `${BASE_URL}/posts`;
+export const ABOUT_URL = `${BASE_URL}/about`;
+
 
 /*
  * Sorts posts by date.
@@ -31,12 +33,10 @@ export async function retrievePosts() {
 }
 
 /*
- * *** UNDER DEVELOPMENT - NOT READY FOR USE ***
- *
  * Retrieves About Page content.
  */
 export async function retrieveAbout() {
-  return axios.get()
+  return axios.get(ABOUT_URL)
 }
 
 
