@@ -4,7 +4,7 @@
  */
 import axios from 'axios';
 
-import { getPostsURL, getAboutURL } from './urls';
+import { getPostsURL } from './urls';
 import PostObj from '../PostObj';
 
 /*
@@ -13,7 +13,6 @@ import PostObj from '../PostObj';
 function sortPosts(posts) {
     return posts.sort((a, b) => b.date - a.date);
 }
-
 
 /*
  * Takes the server response and returns list of posts.
@@ -24,19 +23,10 @@ function prepRespPosts(resp) {
   ));
 }
 
-
 /*
  * Retrieves all blog posts.
  */
 export async function retrievePosts() {
   return axios.get(getPostsURL())
     .then((resp) => prepRespPosts(resp));
-}
-
-/*
- * Retrieves About Page content.
- * TODO: put in its own file.
- */
-export async function retrieveAbout() {
-  return axios.get(getAboutURL());
 }
