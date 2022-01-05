@@ -1,7 +1,7 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import { render, screen, act } from '@testing-library/react';
-import { POSTS_URL } from './const';
+import { POSTS_URL } from './be_calls';
 
 import App from './App';
 

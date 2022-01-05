@@ -1,7 +1,8 @@
 import axios from 'axios';
 import PostObj from './PostObj';
 
-import { POSTS_URL } from './const';
+const BASE_URL = 'https://nathanconroydev.pythonanywhere.com';
+export const POSTS_URL = `${BASE_URL}/posts`;
 
 /*
  * Sorts posts by date.
@@ -21,9 +22,22 @@ function prepRespPosts(resp) {
 }
 
 
+/*
+ * Retrieves all blog posts.
+ */
 export async function retrievePosts() {
   return axios.get(POSTS_URL)
     .then((resp) => prepRespPosts(resp));
 }
+
+/*
+ * *** UNDER DEVELOPMENT - NOT READY FOR USE ***
+ *
+ * Retrieves About Page content.
+ */
+export async function retrieveAbout() {
+  return axios.get()
+}
+
 
 export default retrievePosts;
