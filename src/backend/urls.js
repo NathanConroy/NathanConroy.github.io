@@ -1,5 +1,5 @@
 import axios from 'axios';
-import PostObj from './PostObj';
+import PostObj from '../PostObj';
 
 const BASE_URL = 'https://nathanconroydev.pythonanywhere.com';
 export const POSTS_URL = `${BASE_URL}/posts`;

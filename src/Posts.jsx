@@ -1,7 +1,7 @@
 import { Fragment, useState, useEffect } from 'react';
 
 import Post from './Post';
-import { retrievePosts } from './be_urls';
+import { retrievePosts } from './backend/urls';
 
 /*
  * Fetch posts from the backend.
