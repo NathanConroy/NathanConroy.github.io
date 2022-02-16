@@ -6,6 +6,7 @@ import { POSTS_URL } from './backend/urls';
 import App from './App';
 
 const OK = 200;
+const TEXT_CONTENT = 'text';
 
 // TODO: Create function to generate each test post.
 const TEST_POSTS = [
@@ -14,14 +15,20 @@ const TEST_POSTS = [
     author: 'Author',
     date: '2021-01-01',
     title: 'First post.',
-    content: 'blog content'
+    sections: [{
+      type: TEXT_CONTENT,
+      content: 'blog content'
+    },]
   },
   {
     id: 2,
     author: 'Author',
     date: '2021-01-02',
     title: 'Second post.',
-    content: 'blog content'
+    sections: [{
+      type: TEXT_CONTENT,
+      content: 'blog content'
+    },]
   }
 ];
 

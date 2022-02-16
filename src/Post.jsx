@@ -1,10 +1,12 @@
 
+const FIRST_SECTION = 0;
+
 function Post({ post }) {
   return (
     <div className="post">
       <PostHdr title={post.title} />
       <PostTimeStamp date={post.dateStr} />
-      <PostContent content={post.content} />
+      <PostContent sections={post.sections} />
     </div>
   );
 }
@@ -18,8 +20,8 @@ function PostTimeStamp({ date }) {
 }
 
 
-function PostContent({ content }) {
-    return <p>{content}</p>;
+function PostContent({ sections }) {
+    return <p>{sections[FIRST_SECTION].content}</p>;
 }
 
 export default Post;

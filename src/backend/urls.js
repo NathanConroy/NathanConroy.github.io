@@ -1,5 +1,5 @@
 const BASE_URL = 'https://nathanconroydev.pythonanywhere.com';
-export const POSTS_URL = `${BASE_URL}/posts`;
+export const POSTS_URL = `${BASE_URL}/posts?version=v2`;
 export const ABOUT_URL = `${BASE_URL}/about`;
 
 /*
