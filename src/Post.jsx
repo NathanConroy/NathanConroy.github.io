@@ -12,16 +12,16 @@ function Post({ post }) {
 }
 
 function PostHdr({ title }) {
-    return <h2>{title}</h2>
+  return <h2>{title}</h2>
 }
 
 function PostTimeStamp({ date }) {
-    return <h3>{date}</h3>;
+  return <h3>{date}</h3>;
 }
 
 
 function PostContent({ sections }) {
-    return <p>{sections[FIRST_SECTION].content}</p>;
+  return <p>{sections[FIRST_SECTION].content}</p>;
 }
 
 export default Post;
