@@ -45,10 +45,10 @@ function sortPosts(posts) {
 }
 
 /*
- * Takes the server response and returns list of posts.
+ * Takes JSON list of posts and returns list of Post objects.
  */
-function prepRespPosts(resp) {
-  return sortPosts(resp.data.map(
+export function postsFromJson(json_data) {
+  return sortPosts(json_data.map(
     (post) => new PostObj(post.id, post.title, post.author, post.sections, post.date)
   ));
 }
@@ -58,5 +58,5 @@ function prepRespPosts(resp) {
  */
 export async function retrievePosts() {
   return axios.get(getPostsURL())
-    .then((resp) => prepRespPosts(resp));
+    .then((resp) => postsFromJson(resp.data));
 }
