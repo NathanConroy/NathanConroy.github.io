@@ -1,6 +1,7 @@
-import { Fragment, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import Post from './Post';
+import ReadingBlock from './ReadingBlock';
 import { retrievePosts } from './backend/posts';
 
 /*
@@ -30,9 +31,9 @@ function usePosts() {
 function Posts() {
   const posts = usePosts();
   return (
-    <>
+    <ReadingBlock>
       { posts.map((post) => <Post key={post.id.toString()} post={post} />) }
-    </>
+    </ReadingBlock>
   );
 }
 
