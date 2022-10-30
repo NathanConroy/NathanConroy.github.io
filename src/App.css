@@ -60,13 +60,3 @@ h1 {
   white-space: pre-wrap;
   font-size: 1.25em;
 }
-
-.post--desktop-laptop-or-tablet {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.post--mobile {
-  margin-left: 20px;
-  margin-right: 20px;
-}
