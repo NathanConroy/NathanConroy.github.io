@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+import ReadingBlock from './ReadingBlock';
 import retrieveAbout from './backend/about';
 
 const NULL_ABOUT = null;
@@ -29,9 +30,11 @@ function AboutContent() {
 
 function AboutMe() {
   return (
-    <div className="about">
-      <AboutContent />
-    </div>
+    <ReadingBlock>
+      <div className="about">
+        <AboutContent />
+      </div>
+    </ReadingBlock>
   );
 }
 
